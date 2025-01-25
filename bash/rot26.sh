@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Bash rot26 implementation
+# by ArmoredStone
+# 24.01.2025
+
 # Check if the correct number of arguments are passed
 if [[ $# -ne 2 ]]; then
     echo "Usage: $0 <mode> <string>"
@@ -61,7 +65,6 @@ shift_string() {
     done
     echo "$result"
 }
-
 
 # Call the shift_string function with the provided arguments
 shifted_string=$(shift_string "$input_string" "$shift_mode")
