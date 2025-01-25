@@ -1,6 +1,8 @@
 # A meme
 
-Introduces approaches for implementation of ROT26 algorithm in multiple programming languages.
+Introduces approaches for implementation of ROT26 string shift mechanics in multiple programming languages.
+
+In current implementation shifting is not bound to alphabet table and rotates around all the symbols programming language encoding specify.
 
 # ROT26
 
@@ -10,4 +12,4 @@ ROT26 is a trivial modification of the ROT13 algorithm. Both are simple letter s
 
 Execution is performed through passing a mode specifier and a string as command line arguments.
 
-Modes are: "d" for decode and "e" for encode.
+Modes are: "r" for right-way shift and "l" for left-way shift.
